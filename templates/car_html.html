@@ -1,0 +1,156 @@
+
+<html>
+<head>
+    <title>car project</title>
+</head>
+<body>
+
+    <form action="{{ url_for('predict_price') }}", method="POST">
+        <div>
+            <label for="">Symbolling</label> <input type="number" name="symb" id="symb">
+            <label for="">Normal loss</label> <input type="number" name="normalized_losses">
+            <label for="">make </label> <select name="make" id="make">
+                <option value="alfa-romero">alfa-romero</option>
+                <option value="audi">audi</option>
+                <option value="bmw">bmw</option>
+                <option value="chevrolet">chevrolet</option>
+                <option value="honda">honda</option>
+                <option value="isuzu">isuzu</option>
+                <option value="jaguar">jaguar</option>
+                <option value="mazda">mazda</option>
+                <option value="mercedes-benz">mercedes-benz</option>
+                <option value="mercury">mercury</option>
+               <option value="dodge">dodge</option>
+                <option value="mitsubishi">mitsubishi</option>
+                <option value="nissan">nissan</option>
+                <option value="peugot">peugot</option>
+                <option value="plymouth">plymouth</option>
+                <option value="porsche">porsche</option>
+                <option value="renault">renault</option>
+                <option value="saab">saab</option>
+                <option value="subaru">subaru</option>
+                <option value="toyota">toyota</option>
+                <option value="volkswagen">volkswagen</option>
+                <option value="volvo">volvo</option>
+
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="">Fuel Type</label> <select name="fule_type" id="">
+                <option value="1">Gas</option>
+                <option value="0">Diesel</option>
+            </select>
+
+            <label for="">Aspiration</label> <select name="aspiration" id="aspiration">
+                <option value="1">turbo</option>
+                <option value="0">std</option>
+            </select>
+                
+            <label for="">Doors</label> <select name="num_of_doors" id="num_of_doors">
+
+                <option value="4">four</option>
+                <option value="2">two</option>
+
+            </select>
+        </div>
+            <br>
+        <div>
+            <label for="">Body Style</label>
+             <select name="body_style" id="">
+                <option value="convertible">convertible</option>
+                <option value="hardtop">hardtop</option>
+                <option value="sedan">sedan</option>
+                <option value="hatchback">hatchback</option>
+                <option value="porsche">porsche</option>
+                <option value="wagon">wagon</option>
+            </select>
+
+
+
+            <label for="">Drive wheel</label> <select name="drive_wheel" id="">
+                <option value="4wd">4wd</option>
+                <option value="fwd">fwd</option>
+                <option value="rwd">rwd</option>
+            </select>
+
+            <label for="">Engine Location</label> <select name="engine_location" id="">
+                <option value="0">front</option>
+                <option value="1">rear</option>
+
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="">wheel base</label> <input type="number" placeholder="Enter in cm" name="wheel_base" id="wheel_base">
+            <label for="">length</label> <input type="number" placeholder="Enter in cm" name="length" id="length">
+            <label for="">width</label> <input type="number" placeholder="Enter in cm" name="width" id="width">
+
+        </div>
+        <br>
+        <div>
+            <label for="">height</label> <input type="number" placeholder="Enter in cm" name="height" id="height">
+            <label for="">curb_weight</label> <input type="number" placeholder="Enter in kg" name="curb_weight" id="curb_weight">
+            <label for="">Engine Type</label> 
+            <select name="engine_type" id="">
+                <option value="dohc">dohc</option>
+                <option value="dohcv">dohcv</option>
+                <option value="l">l</option>
+                <option value="ohc">ohc</option>
+                <option value="ohcf">ohcf</option>
+                <option value="ohcv">ohcv</option>
+                <option value="rotor">rotor</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="">cylinders</label><select name="num_of_cylinders" id="num_of_cylinders">
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="eight">8</option>
+                <option value="twelve">12</option>
+        </select>
+
+        <label for="">Engine size</label> <input type="number" name="engine_size" id="engine_size" placeholder="Enter size in cm">
+        
+        <label for="">fuel system</label> <select name="fuel_system" id="fuel_system">
+            <option value="1bbl">1bbl</option>
+            <option value="2bbl">2bbl</option>
+            <option value="4bbl">4bbl</option>
+            <option value="idi">idi</option>
+            <option value="mfi">mfi</option>
+            <option value="mpfi">mpfi</option>
+            <option value="spdi">spdi</option>
+            <option value="spfi">spfi</option>
+        </select>
+    
+    
+    </div>
+
+<br>
+    <div>
+        <label for="">bore</label> <input type="text" name="bore" id="bore">
+        <label for="">stroke</label><input type="text" name="stroke" id="stroke">
+        <label for="">compression_ratio</label> <input type="text" name="compression_ratio" id="compression_ratio">
+    </div>
+       
+    <br>
+
+    <div>
+        <label for="">horsepower</label> <input type="number" name="horsepower" id="horsepower">
+        <label for="">peak_rpm</label><input type="number" name="peak_rpm" id="peak_rpm">
+        <label for="">city_mpg</label> <input type="number" name="city_mpg" id="city_mpg">
+        <label for="">highway_mpg</label> <input type="number" name="highway_mpg" id="highway_mpg">
+    </div>
+    <br>
+    <input type="submit" name="" id="">
+    </form>
+    
+</body>
+</html>
