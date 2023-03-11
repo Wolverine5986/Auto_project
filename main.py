@@ -23,5 +23,11 @@ def predict_price():
         return render_template('car_html.html')
 
 
+
+@app.rout('/practice')
+def Wolverine():
+    return 'This is for just Practice purpose'
+
+
 if __name__ == '__main__':
     app.run(debug=True)
